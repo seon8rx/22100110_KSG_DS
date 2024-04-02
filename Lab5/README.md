@@ -1,3 +1,4 @@
 ### [Lab 5]
 DS001 결과<br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/Lab5/result/DS001.png' width = "300"><br>
+-----
 hello 결과 <br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/Lab5/result/hello.png' width = "300" >
