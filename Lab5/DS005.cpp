@@ -35,4 +35,5 @@ int main(){
         if(alphabet[a]) cout << output[a] << " : " << alphabet[a] << endl;
     }
 
+    return 0;
 }

@@ -52,4 +52,6 @@ int main(){
 
     cout << "Total Credits " << t_credit << ',' << " GPA " << r << endl;
 
+    return 0;
+
 }
