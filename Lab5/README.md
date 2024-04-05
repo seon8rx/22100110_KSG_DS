@@ -1,6 +1,6 @@
 ## [Lab 5]
 
-<br>DS001 결과<br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/Lab5/result/DS001.png' width = "500"><br>
+DS001 결과<br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/Lab5/result/DS001.png' width = "500"><br>
 DS002 결과<br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/Lab5/result/DS002.png' width = "500"><br>
 DS003 결과<br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/Lab5/result/DS003.png' width = "500"><br>
 DS004 결과<br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/Lab5/result/DS004.png' width = "500"><br>
