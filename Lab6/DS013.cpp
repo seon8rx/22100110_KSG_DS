@@ -14,6 +14,29 @@ struct Cafe{
     Menu *list;
 };
 
+void addCafe(Cafe &r1);
+void addMenu(Menu &m1);
+void displayMenus(Cafe &r1);
+
+int main(){
+    Cafe c;
+    
+    addCafe(c);
+
+    // for(Menu a : c.list[]){
+    //     addMenu(a);
+    // }
+    for(int i=0; i<c.msize; i++){
+        addMenu(c.list[i]);
+    }
+
+    displayMenus(c);
+
+    delete[] c.list;
+
+    return 0;
+}
+
 void addCafe(Cafe &r1){
     getline(cin, r1.name);
     cin >> r1.msize;
@@ -34,23 +57,4 @@ void displayMenus(Cafe &r1){
         cout << r1.list[i].name << " " << r1.list[i].price << endl;
     }
     cout << "=================";
-}
-
-int main(){
-    Cafe c;
-    
-    addCafe(c);
-
-    // for(Menu a : c.list[]){
-    //     addMenu(a);
-    // }
-    for(int i=0; i<c.msize; i++){
-        addMenu(c.list[i]);
-    }
-
-    displayMenus(c);
-
-    delete[] c.list;
-
-    return 0;
 }
