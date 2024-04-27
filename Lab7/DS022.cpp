@@ -35,6 +35,7 @@ class EnglishTest{
         }
 
         string passFail(int input){
+            if(input>495 || input <0) return "out of range";
             if(input>=300) return "Pass";
             else return "Fail";
         }
@@ -45,29 +46,15 @@ class EnglishTest{
 
         void printInfo(EnglishTest et){
             cout << "[" << et.name << "]" << endl;
-            if(scoreCheck(et.lc))
             cout << "LC - " << et.lc << " " << passFail(et.lc) << endl;
-            else
-            cout << "LC - out of range" << endl;
-            if(scoreCheck(et.rc))
             cout << "RC - " << et.rc << " " << passFail(et.rc) << endl;
-            else
-            cout << "RC - out of range" << endl;
-            if(scoreCheck(et.lc)){
-                if(scoreCheck(et.rc)){
-                    cout << "Total - " << totalScore(et);
-                }else{
-                    cout << "RC - out of range";
-                }
-            }else{
-                cout << "LC - out of range";
-            }
+            cout << "Total - " << totalScore(et);
         }
 };
 
 int main(){
 
-    EnglishTest et1("Constructor with parameter", 4400, 280);
+    EnglishTest et1("Constructor with parameter", 4400, 2820);
     et1.printInfo(et1);
 
 
