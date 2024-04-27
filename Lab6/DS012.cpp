@@ -9,8 +9,8 @@ struct Product {
     string manufac;
 };
 
-bool compareProduct(Product p[]);
-void printResult(bool b, Product p[]);
+bool compareProduct(Product* p);
+void printResult(bool b, Product* p);
 
 int main(){
     Product p[2];
@@ -24,7 +24,7 @@ int main(){
     return 0;
 }
 
-bool compareProduct(Product p[]){
+bool compareProduct(Product* p){
     if(p[0].price != p[1].price) return false;
     if (p[0].name.length() != p[1].name.length()) return false;
     for(int i=0; i<p[0].name.length(); i++){
@@ -33,7 +33,7 @@ bool compareProduct(Product p[]){
     return true;
 }
 
-void printResult(bool b, Product p[]){
+void printResult(bool b, Product* p){
     if(b){
         cout << p[0].name << " is equal";
     }else{

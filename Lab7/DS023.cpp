@@ -10,23 +10,29 @@ class Prod{
         string manuf;
         int size;
     public :
-        int addProd(int s){
-            cin.ignore();
-            getline(cin, name);
-            cin >> price >> discount >> amount >> manuf;
-            s++;
-            return s;
-        }
-        void listProd(){
-            if(discount!=0)
-                cout << discountedPrice() << " (-" << discount << "%) " << name << " " << amount << " " << manuf <<endl;
-            else
-                cout << discountedPrice() << " (" << discount << "%) " << name << " " << amount << " " << manuf <<endl;
-        }
-        int discountedPrice(){
-            return price - (price*discount/100);
-        }
+        int addProd(int s);
+        void listProd();
+        int discountedPrice();
 };
+
+int Prod::addProd(int s){
+    cin.ignore();
+    getline(cin, name);
+    cin >> price >> discount >> amount >> manuf;
+    s++;
+    return s;
+}
+
+void Prod::listProd(){
+    if(discount!=0)
+        cout << discountedPrice() << " (-" << discount << "%) " << name << " " << amount << " " << manuf <<endl;
+    else
+        cout << discountedPrice() << " (" << discount << "%) " << name << " " << amount << " " << manuf <<endl;
+}
+
+int Prod::discountedPrice(){
+    return price - (price*discount/100);
+}
 
 int main(){
     int size = 10;
