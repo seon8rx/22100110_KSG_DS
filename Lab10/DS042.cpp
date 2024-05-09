@@ -111,7 +111,7 @@ int main(){
     LinkedStack* linkedStack = new LinkedStack();
 
     ifstream readFile;
-    readFile.open("DS042-1.txt");
+    readFile.open("DS042.txt");
 
     while(!readFile.eof()){
         int result=0;
