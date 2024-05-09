@@ -203,5 +203,6 @@ int main(){
             
     }
     readFile.close();
+    linkedStack->~LinkedStack();
     return 0;
 }
