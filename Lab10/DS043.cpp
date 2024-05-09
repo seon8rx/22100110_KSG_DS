@@ -5,7 +5,7 @@ class Node{
     public:
         char data;
         Node* next;
-        Node(int d){
+        Node(char d){
             data = d;
             next = NULL;
         }
