@@ -116,7 +116,7 @@ void MyCircularQueue::printDetail() {
 
 int main(){
     MyCircularQueue myQue;
-    
+
     cout << "=====Dequeue x 1 =====" << endl;
     myQue.dequeue();
     myQue.printDetail();
@@ -132,9 +132,12 @@ int main(){
     myQue.printDetail();
 
     cout << "=====Enqueue x 6 (10 ~ 60) =====" << endl;
-    for(int i=0; i<7; i++){
+    for(int i=0; i<6; i++){
         myQue.enqueue((i+1)*10);
-        if(myQue.isFull()) break;
+        if(myQue.isFull()){
+            cout << "=> Queue is full !" << endl;
+            break;
+        }
     }
     myQue.printDetail();
 
