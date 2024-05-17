@@ -80,10 +80,11 @@ int MyCircularQueue::size() const{
 void MyCircularQueue::print(){
     int f = front;
     int r = rear;
-    while(f!=r+1){
-        cout << '[' << list[f+1] << ']';
+    while(f!=r){
         f++;
         if(f>maxsize-1) f=0;
+        cout << list[f];
+        if(f!=r) cout << " => ";
     } 
     cout << endl;
 }
