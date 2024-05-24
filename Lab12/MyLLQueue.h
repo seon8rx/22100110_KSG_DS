@@ -1,15 +1,24 @@
 #include <iostream>
 using namespace std;
 
-class Node {
+class N{
     public:
-        int data;
-        Node* link;
-        Node(){}
-        Node(int input){
-            data = input;
-            link = NULL;
-        }
+    int data;
+    N* link;
+    N(){}
+    N(int input){
+        data = input;
+        link = NULL;
+    }
+};
+
+class Node {
+    private:
+        N* front;
+        N* rear;
+    public:
+        Node(){front=NULL; rear=NULL;}
+
         bool isEmpty();
         void enqueue(int input);
         void dequeue();
@@ -18,5 +27,7 @@ class Node {
         void displayQueue();
 
         int getFibonacci();
+
+        int getFront();
 
 };

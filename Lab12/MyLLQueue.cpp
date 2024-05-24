@@ -1,8 +1,5 @@
 #include "MyLLQueue.h"
 
-Node* front;
-Node* rear;
-
 bool Node::isEmpty(){
     bool result = false;
     if(front == NULL && rear == NULL) result=true;;
@@ -10,7 +7,7 @@ bool Node::isEmpty(){
 }
 
 void Node::enqueue(int input){
-    Node* tmp = new Node(input);
+    N* tmp = new N(input);
     if(isEmpty()){
         front = tmp;
         rear = tmp;
@@ -30,7 +27,7 @@ void Node::dequeue(){
         free(front);
         front = rear = NULL;
     }else{
-        Node* tmp = front;
+        N* tmp = front;
         front = front -> link;
         free(tmp);
     }
@@ -52,7 +49,7 @@ void Node::displayQueue(){
         cout << "Queue is empty" << endl;
         return;        
     }
-    Node* tmp = front;
+    N* tmp = front;
     while(tmp != NULL){
         cout << tmp->data;
         if(tmp->link != NULL) cout << " -> ";
@@ -63,4 +60,8 @@ void Node::displayQueue(){
 
 int Node::getFibonacci(){
     return front->data + front->link->data;
+}
+
+int Node::getFront(){
+    return front->data;
 }
