@@ -60,3 +60,7 @@ void Node::displayQueue(){
     }
     cout << endl;
 }
+
+int Node::getFibonacci(){
+    return front->data + front->link->data;
+}

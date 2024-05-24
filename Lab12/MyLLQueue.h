@@ -16,4 +16,7 @@ class Node {
         void showfront();
         void showrear();
         void displayQueue();
+
+        int getFibonacci();
+
 };
