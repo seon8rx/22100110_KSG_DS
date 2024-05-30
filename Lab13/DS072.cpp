@@ -11,20 +11,6 @@ void printarray(int *arr, int n){
 
 void insertionSort(int *arr, int n){
 
-//     int index;
-//     for(int i=0; i<n-1; i++){
-//         index = i;
-//         for(int j=i+1; j<n; j++){
-//             if(arr[index]>arr[j]) index = j;
-//         }
-//         if(index!=i) {
-//             swap(arr[i], arr[index]);
-// #ifdef DEBUG
-//     printarray(arr, n);
-// #endif
-//         }
-//     }
-
     for(int i=1; i<n; i++){
         for(int j=0; j<i; j++){
             if(arr[i]<arr[j]){
