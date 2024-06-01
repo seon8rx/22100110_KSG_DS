@@ -33,6 +33,8 @@ $(LIBRARY): $(LIB_OBJECT)
 lib/sorting.o: lib/sorting.cpp lib/Sorting.h
 	$(CXX) -c lib/sorting.cpp -o lib/sorting.o $(CXXFLAGS)
 
+rebuild-lib: clean $(LIB_OBJECT)
+
 clean:
 	rm -f $(EXECUTABLES) $(LIB_OBJECT) $(LIBRARY)
 
