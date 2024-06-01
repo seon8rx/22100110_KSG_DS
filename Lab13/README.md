@@ -11,4 +11,6 @@ DS074 결과<br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/
 DS075 결과<br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/Lab13/result/DS075.png' width = "700"><br>
 DS076 결과<br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/Lab13/result/DS076_1.png' width = "700">
 <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/Lab13/result/DS076_2.png' width = "700">
-<img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/Lab13/result/DS076_3.png' width = "700"><br>
+<img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/Lab13/result/DS076_3.png' width = "700">
+<img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/Lab13/result/DS076_4.png' width = "700">
+<img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/Lab13/result/DS076_5.png' width = "700"><br>
