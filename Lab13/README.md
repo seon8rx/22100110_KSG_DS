@@ -1,12 +1,8 @@
 ## [Lab 13]
 
 Makefile 사용방법<br>
-make (전체 컴파일)<br>
-make DEBUG=1 (DEBUG 매크로 포함하여 컴파일)<br>
-make DS07X (x자리에 들어가는 문제 번호의 파일 컴파일)<br>
-make DS07X DEBUG=1 (x자리에 들어가는 문제 번호의 파일 DEBUG 매크로 포함하여 컴파일)<br>
-단, DS076을 따로 make DS076 을 사용하여 컴파일 할 때, DEBUG 매크로를 포함여부를 변경할 때는<br>
-make rebuild-lib 혹은 make rebuild-lib DEBUG=1를 먼저 실행합니다.<br>
+make 명령 뒤에 DEBUG=1을 추가하면 DEBUG 매크로를 정의하여 컴파일합니다.<br>
+단, make DS076 <-> make DS076 DEBUG=1 과 같이 DS076을 DEBUG 매크로 여부를 변경하기 전에 make rebuild-lib 혹은 make rebuild-lib DEBUG=1 을 먼저 실행하여 sorting.o 파일을 다시 컴파일 해야합니다.<br>
 
 DS071 결과<br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/Lab13/result/DS071.png' width = "700"><br>
 DS072 결과<br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/Lab13/result/DS072.png' width = "700"><br>
