@@ -1,0 +1,25 @@
+CXX = g++
+
+TARGET1 = DS081
+TARGET2 = DS082
+TARGET3 = DS083
+
+SRC1 = DS081.cpp
+SRC2 = DS082.cpp
+SRC3 = DS083.cpp
+
+all: $(TARGET1) $(TARGET2) $(TARGET3)
+
+$(TARGET1): $(SRC1)
+	$(CXX) -o $(TARGET1) $(SRC1)
+
+$(TARGET2): $(SRC2)
+	$(CXX) -o $(TARGET2) $(SRC2)
+
+$(TARGET3): $(SRC3)
+	$(CXX) -o $(TARGET3) $(SRC3)
+
+clean:
+	rm -f $(TARGET1) $(TARGET2) $(TARGET3)
+
+.PHONY: all clean
