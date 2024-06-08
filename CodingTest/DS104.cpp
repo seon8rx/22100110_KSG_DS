@@ -74,13 +74,21 @@ public:
         }
     }
 
-    void selectionLinked() {
+    static bool more(int a, int b) {return a > b;}
+    static bool less(int a, int b) {return a < b;}
+
+    void selectionLinked(int type) {
         Node* key = start;
         Node* temp;
+
+        bool (*comp)(int, int);
+        if(type%2 != 0) comp = more;
+        else comp = less;
+
         while (key != nullptr) {
             temp = key->next;
             while (temp != nullptr) {
-                if (key->data > temp->data) swapNode(key, temp);
+                if (comp(key->data, temp->data)) swapNode(key, temp);
                 temp = temp->next;
             }
             key = key->next;
@@ -91,13 +99,17 @@ public:
 int main() {
     LinkedList list;
     int choice;
+    int type;
 
     while (true) {
         cout << "How many numbers do you want to create (0:exit) ... ";
         cin >> choice;
         if (choice == 0) break;
+        cout << ("Ascending : 1, Descending : 2 (Odd number for Ascending, Even number for Descending) > ");
+        cin >> type;
+
         list.init(choice);
-        list.selectionLinked();
+        list.selectionLinked(type);
         list.printLinked();
         cout << endl;
     }
