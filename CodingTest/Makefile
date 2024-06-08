@@ -3,7 +3,7 @@ CXXFLAGS = -I./lib
 LDFLAGS = -L./lib
 LIBS = -lSorting
 
-EXECUTABLES = DS101 DS103
+EXECUTABLES = DS101 DS103 DS104
 
 LIB_OBJECT = lib/sorting.o
 LIBRARY = lib/libSorting.a
@@ -14,6 +14,8 @@ DS101: DS101.cpp $(LIBRARY)
 	$(CXX) -o DS101 DS101.cpp $(CXXFLAGS) $(LDFLAGS) $(LIBS)
 DS103: DS103.cpp $(LIBRARY)
 	$(CXX) -o DS103 DS103.cpp $(CXXFLAGS) $(LDFLAGS) $(LIBS)
+DS104: DS104.cpp
+	$(CXX) -o DS104 DS104.cpp
 
 $(LIBRARY): $(LIB_OBJECT)
 	ar rcs $(LIBRARY) $(LIB_OBJECT)
@@ -24,4 +26,4 @@ lib/sorting.o: lib/sorting.cpp lib/Sorting.h
 clean:
 	rm -f $(EXECUTABLES) $(LIB_OBJECT) $(LIBRARY)
 
-.PHONY: all clean DS101
+.PHONY: all clean DS101 DS103 DS104
