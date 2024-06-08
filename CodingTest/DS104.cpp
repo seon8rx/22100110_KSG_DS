@@ -82,8 +82,8 @@ public:
         Node* temp;
 
         bool (*comp)(int, int);
-        if(type%2 != 0) comp = more;
-        else comp = less;
+        if(type%2 != 0) comp = LinkedList::more;
+        else comp = LinkedList::less;
 
         while (key != nullptr) {
             temp = key->next;
@@ -113,8 +113,6 @@ int main() {
         list.printLinked();
         cout << endl;
     }
-
-    list.~LinkedList();
 
     return 0;
 }
