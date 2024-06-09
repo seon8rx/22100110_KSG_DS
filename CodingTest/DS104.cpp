@@ -22,9 +22,9 @@ public:
     }
 
     void swapNode(Node* x, Node* y) {
-        int temp = x->data;
+        int tmp = x->data;
         x->data = y->data;
-        y->data = temp;
+        y->data = tmp;
     }
 
     Node* createNode(int input) {
@@ -46,19 +46,19 @@ public:
     }
 
     void printLinked() const {
-        Node* temp = start;
-        while (temp != nullptr) {
-            cout << temp->data << endl;
-            temp = temp->next;
+        Node* tmp = start;
+        while (tmp != nullptr) {
+            cout << tmp->data << endl;
+            tmp = tmp->next;
         }
     }
 
     void clearLinked() {
-        Node* temp;
+        Node* tmp;
         while (start != nullptr) {
-            temp = start;
+            tmp = start;
             start = start->next;
-            delete temp;
+            delete tmp;
         }
         start = nullptr;
         last = nullptr;
@@ -79,17 +79,17 @@ public:
 
     void selectionLinked(int type) {
         Node* key = start;
-        Node* temp;
+        Node* tmp;
 
         bool (*comp)(int, int);
         if(type%2 != 0) comp = LinkedList::more;
         else comp = LinkedList::less;
 
         while (key != nullptr) {
-            temp = key->next;
-            while (temp != nullptr) {
-                if (comp(key->data, temp->data)) swapNode(key, temp);
-                temp = temp->next;
+            tmp = key->next;
+            while (tmp != nullptr) {
+                if (comp(key->data, tmp->data)) swapNode(key, tmp);
+                tmp = tmp->next;
             }
             key = key->next;
         }
