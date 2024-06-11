@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cassert>
 #include "Sorting.h"
 using namespace std;
 
