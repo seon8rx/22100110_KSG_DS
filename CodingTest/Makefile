@@ -12,6 +12,8 @@ all: $(EXECUTABLES)
 
 DS101: DS101.cpp $(LIBRARY)
 	$(CXX) -o DS101 DS101.cpp $(CXXFLAGS) $(LDFLAGS) $(LIBS)
+DS102: DS102.cpp $(LIBRARY)
+	$(CXX) -std=c++11 -o DS102 DS102.cpp $(CXXFLAGS) $(LDFLAGS) $(LIBS)
 DS103: DS103.cpp $(LIBRARY)
 	$(CXX) -o DS103 DS103.cpp $(CXXFLAGS) $(LDFLAGS) $(LIBS)
 DS104: DS104.cpp
@@ -30,4 +32,4 @@ lib/sorting.o: lib/sorting.cpp lib/Sorting.h
 clean:
 	rm -f $(EXECUTABLES) $(LIB_OBJECT) $(LIBRARY)
 
-.PHONY: all clean DS101 DS103 DS104 DS105 DS106
+.PHONY: all clean DS101 DS102 DS103 DS104 DS105 DS106
