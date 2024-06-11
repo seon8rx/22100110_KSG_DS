@@ -36,4 +36,4 @@ lib/sorting.o: lib/sorting.cpp lib/Sorting.h
 clean:
 	rm -f $(EXECUTABLES) $(LIB_OBJECT) $(LIBRARY)
 
-.PHONY: all clean DS101 DS102 DS103 DS104 DS105 DS106
+.PHONY: all clean DS101 DS102 DS103 DS104 DS105 DS106 DS107 DS108
