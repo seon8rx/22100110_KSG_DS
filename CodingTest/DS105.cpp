@@ -80,6 +80,7 @@ public:
         for (int i = 0; i < size; i++) {
             cin >> number;
             cin >> name;
+            if(number < 1 || number > 100000) break;
             addLast(number, name);
         }
     }
@@ -105,6 +106,16 @@ public:
 
     }
 
+    int size(){
+        int size = 0;
+        Node* tmp = start;
+        while(tmp != nullptr){
+            size++;
+            tmp = tmp->next;
+        }
+        return size;
+    }
+
     
 };
 
@@ -116,9 +127,10 @@ int main() {
     while (true) {
         cout << "How many numbers do you want to create (0:exit) ... ";
         cin >> choice;
-        if (choice == 0) break;
+        if (choice < 1 || choice > 500) break;
         
         list.init(choice);
+        if(list.size() < choice) break;
         list.bubbleLinked();
         list.printLinked();
         cout << endl;
