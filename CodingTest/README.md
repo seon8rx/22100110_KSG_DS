@@ -8,3 +8,4 @@ DS105 결과<br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/
 DS106 결과<br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/CodingTest/result/DS106.png' width = "700"><br>
 DS107 결과<br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/CodingTest/result/DS107.png' width = "700"><br>
 DS108 결과<br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/CodingTest/result/DS108.png' width = "700"><br>
+DS109 결과<br> <img src='https://github.com/seon8rx/22100110_KSG_DS/blob/main/CodingTest/result/DS109.png' width = "700"><br>
