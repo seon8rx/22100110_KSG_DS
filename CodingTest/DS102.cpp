@@ -8,12 +8,20 @@ int main(){
     int numberOfExchange = 0;
     int result = 0;
     cin >> deckSize >> maxNumExchange;
+    if(deckSize < 1 || deckSize > 500) exit(0);
+    if(maxNumExchange < 1 || maxNumExchange > deckSize) exit(0);
 
     int deckA[deckSize];
     int deckB[deckSize];
 
-    for(int i=0; i<deckSize; i++) cin >> deckA[i];
-    for(int i=0; i<deckSize; i++) cin >> deckB[i];
+    for(int i=0; i<deckSize; i++) {
+        cin >> deckA[i];
+        if(deckA[i] < 1 || deckA[i] > 100000) exit(0);
+    }
+    for(int i=0; i<deckSize; i++) {
+        cin >> deckB[i];
+        if(deckB[i] < 1 || deckB[i] > 100000) exit(0);
+    }
 
     selectionSort(deckA, deckSize); selectionSort(deckB, deckSize);
 
